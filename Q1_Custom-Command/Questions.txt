@@ -1,0 +1,24 @@
+1-A breakdown of how your script handles arguments and options.
+
+- Default values are set at the start (case_insensitive=1, show_line_numbers=0, invert_match=0).
+
+- Options are parsed using getopts, supporting -i, -n, -v, -h, and --help, with error handling for unknown options.
+
+- After options are processed, two positional arguments are expected: the search string and the file name.
+
+- The script validates inputs, ensuring the file exists and that both required arguments are provided, otherwise it shows an error and usage help.
+
+- Finally the grep command is built to meet the options required
+
+
+2.  A short paragraph: If you were to support regex or -i/-c/-l options, how would your structure change?
+
+- I would expand the getopts string to recognize those options (for example, :invchl-:). I would also add new variables (like count_matches or list_files) to track whether each option was selected. Then, while building the grep command, I would append the corresponding -i (already added), -c, or -l flags based on the user’s input. This structure keeps the script flexible, making it easy to add more options without major changes to the flow.
+
+
+3.  What part of the script was hardest to implement and why?
+
+- I had a problem handling errors because whenever the search string was missing, the script mistakenly showed "file not found" instead of properly identifying the missing search string.
+
+
+
