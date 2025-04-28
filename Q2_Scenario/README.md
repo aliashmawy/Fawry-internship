@@ -85,7 +85,8 @@ sudo ss -tuln | grep ':80\|:443'
 - Check `/var/log/nginx/error.log` or `/var/log/nginx/access.log`  for web server requests
 - Check `/var/log/audit/audit.log` for security policies related to SELinux
 
-![image.png](attachment:430d88ae-8a3b-4009-8c63-8208f237bb49:image.png)
+  <img src="screenshots/7">
+
 
 ---
 
@@ -100,7 +101,7 @@ dig internal.example.com
 dig internal.example.com @192.168.0.100
 ```
 
-![image.png](attachment:a1c3c372-14c2-49aa-a840-9d7b9f0f4671:image.png)
+<img src="screenshots/1">
 
 **Fix Commands:**
 
@@ -112,7 +113,7 @@ sudo nano /etc/resolv.conf
 
 - If missing DNS record, add record on DNS server.
 
-![image.png](attachment:c9ca200f-5746-4cae-bdd8-d83f2095b05f:image.png)
+<img src="screenshots/3">
 
 ---
 
@@ -147,7 +148,7 @@ ping 192.168.0.10
 traceroute 192.168.0.10
 ```
 
-![image.png](attachment:a00e2182-16bc-425b-8ad4-ffc462c39a45:image.png)
+<img src="screenshots/5">
 
 If unreachable, inspect firewall rules or network settings.
 
@@ -161,7 +162,7 @@ sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 ```
 
-![image.png](attachment:6d8db3e0-a2a2-4132-a3cf-b4e1fa09c647:image.png)
+<img src="screenshots/8">
 
 ---
 
@@ -173,7 +174,7 @@ sudo ufw allow 443/tcp
 sudo systemctl status nginx
 ```
 
-![image.png](attachment:6b9ef538-2881-4939-8a36-2662792f926a:image.png)
+<img src="screenshots/6">
 
 **Fix Commands:**
 
