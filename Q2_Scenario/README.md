@@ -115,7 +115,7 @@ sudo nano /etc/resolv.conf
 
 - If missing DNS record, add record on DNS server.
 
-<img src="screenshots/3.png">
+<img src="screenshots/4.png">
 
 ---
 
