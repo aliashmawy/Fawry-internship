@@ -103,7 +103,7 @@ dig internal.example.com
 dig internal.example.com @192.168.0.100
 ```
 
-<img src="screenshots/1">
+<img src="screenshots/1.png">
 
 **Fix Commands:**
 
@@ -115,7 +115,7 @@ sudo nano /etc/resolv.conf
 
 - If missing DNS record, add record on DNS server.
 
-<img src="screenshots/3">
+<img src="screenshots/3.png">
 
 ---
 
@@ -150,7 +150,7 @@ ping 192.168.0.10
 traceroute 192.168.0.10
 ```
 
-<img src="screenshots/5">
+<img src="screenshots/5.png">
 
 If unreachable, inspect firewall rules or network settings.
 
@@ -164,7 +164,7 @@ sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 ```
 
-<img src="screenshots/8">
+<img src="screenshots/8.png">
 
 ---
 
@@ -176,7 +176,7 @@ sudo ufw allow 443/tcp
 sudo systemctl status nginx
 ```
 
-<img src="screenshots/6">
+<img src="screenshots/6.png">
 
 **Fix Commands:**
 
