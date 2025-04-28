@@ -85,8 +85,10 @@ sudo ss -tuln | grep ':80\|:443'
 - Check `/var/log/nginx/error.log` or `/var/log/nginx/access.log`  for web server requests
 - Check `/var/log/audit/audit.log` for security policies related to SELinux
 
+  
+<p align="center">
   <img src="screenshots/7">
-
+</p>
 
 ---
 
