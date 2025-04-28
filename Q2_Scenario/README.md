@@ -87,7 +87,7 @@ sudo ss -tuln | grep ':80\|:443'
 
   
 <p align="center">
-  <img src="screenshots/7">
+  <img src="screenshots/7.png">
 </p>
 
 ---
